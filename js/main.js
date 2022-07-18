@@ -52,7 +52,6 @@ for (let i = 0; i < team.length; i++) {
 
     nameBox.append(team[i].name);
     roleBox.append(team[i].role);
-    //photoBox.append(team[i].photo);
     photoBox.src = `img/${team[i].photo}`;
 
     info.append(nameBox, roleBox, photoBox);
