@@ -48,11 +48,12 @@ for (let i = 0; i < team.length; i++) {
 
     let nameBox = document.createElement('h1');
     let roleBox = document.createElement('h2');
-    let photoBox = document.createElement('h4');
-    
+    let photoBox = document.createElement('img');
+
     nameBox.append(team[i].name);
     roleBox.append(team[i].role);
-    photoBox.append(team[i].photo);
+    //photoBox.append(team[i].photo);
+    photoBox.src = `img/${team[i].photo}`;
 
     info.append(nameBox, roleBox, photoBox);
     wrapperDom.append(info);

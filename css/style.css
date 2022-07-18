@@ -4,11 +4,36 @@
     box-sizing: border-box;
 }
 
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
 #wrapper {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem;
 }
 
 .info-box {
-    margin: 1rem 2rem;
+    width: calc((100% / 3) - 1rem);
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.5rem;
+}
+
+.info-box img {
+    width: 60%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    margin-bottom: .5rem;
 }
