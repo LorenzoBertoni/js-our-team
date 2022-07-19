@@ -50,9 +50,11 @@ for (let i = 0; i < team.length; i++) {
     let roleBox = document.createElement('h2');
     let photoBox = document.createElement('img');
 
-    nameBox.append(team[i].name);
-    roleBox.append(team[i].role);
-    photoBox.src = `img/${team[i].photo}`;
+    nameBox.append(team[i].name); //accede alla chiave 'name' negli oggetti dell'array team
+    roleBox.append(team[i].role); //accede alla chiave 'role' negli oggetti dell'array team
+    // primi due elementi appesi al DOM
+    // img stampata tramite src in JS
+    photoBox.src = `img/${team[i].photo}`; //accede alla chiave 'photo' negli oggetti dell'array team
 
     info.append(nameBox, roleBox, photoBox);
     wrapperDom.append(info);
